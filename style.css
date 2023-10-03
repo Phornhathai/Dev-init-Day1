@@ -297,6 +297,10 @@ section{
     text-align: center;
 }
 
+.details-containers > p{
+    padding-top: 0.5rem;
+}
+
 .section-container{
     gap:4rem;
     height: 80%;

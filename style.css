@@ -334,7 +334,7 @@ section{
 
 .details-container{
     border-radius: 2rem;
-    padding: 15px;
+    padding: 20px;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163,163,163);
 }
@@ -345,6 +345,11 @@ section{
     flex-direction: row;
     gap:2.5rem;
     justify-content: space-around;
+}
+
+.article-container > img{
+    width: 50%;
+    height: 50%;
 }
 
 article{
@@ -436,3 +441,4 @@ footer{
 footer p{
     text-align: center;
 }
+

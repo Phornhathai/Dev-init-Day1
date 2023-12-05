@@ -345,11 +345,12 @@ section{
     flex-direction: row;
     gap:2.5rem;
     justify-content: space-around;
+    
 }
 
 .article-container > img{
-    width: 50%;
-    height: 50%;
+    width: 20vw;
+    height: 20vh;
 }
 
 article{

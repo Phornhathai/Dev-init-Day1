@@ -170,9 +170,9 @@ section{
 }
 
 #profile .section__pic-container img{
-    border-radius: 40%;
-    height: 70%;
-    width: 70%;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 

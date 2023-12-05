@@ -166,12 +166,14 @@ section{
 
 .section__pic-container{
     display: flex;
-    height: 30%;
-    width: 30%;
+    margin-left: 30px;
 }
 
 #profile .section__pic-container img{
-    border-radius: 50%;
+    border-radius: 40%;
+    height: 70%;
+    width: 70%;
+    object-fit: cover;
 }
 
 

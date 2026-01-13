@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav id="desktop-nav">
+    <nav id="desktop-nav" aria-label="personal-user">
         <div class="logo">
             Phornhathai Thanomwong
         </div>
@@ -24,26 +24,22 @@
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav">
+    <nav id="hamburger-nav" aria-label="group-menus">
         <div class="logo">Phornhathai Thanomwong</div>
         <div class="hamburger-menu">
-            <!-- ใช้ javascript ทำ hamburger -->
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <div class="menu-links">
+                <ul>
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./images/profile_aum.jpeg" alt="Phornhathai Thanomwong Picture">
+            <img class="profile-user" src="./images/profile_aum.jpeg" alt="profile phornhathai thanomwong">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
@@ -101,7 +97,7 @@
             <div class="about-containers">
                 <div class="details-containers">
                     <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
+                    <div class="skills-container">
                         <article>
                             <img src="./images/checkmark.png" alt="experience icon" class="icon">
                             <div>
@@ -162,7 +158,7 @@
                 </div>
                 <div class="details-containers">
                     <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
+                    <div class="skills-container">
                         <article>
                             <img src="./images/checkmark.png" alt="experience icon" class="icon">
                             <div>
@@ -188,8 +184,8 @@
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
+                <div class="details-container">
+                    <div class="project-container">
                         <img src="images/myportfolio.jpeg" alt="Project 1" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">My Portfolio</h2>
@@ -204,24 +200,26 @@
                         </button>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
+                <div class="details-container">
+                    <div class="project-container">
                         <img src="./images/project-1.jpeg" alt="Project 2" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">Plain Website</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open=('https://github.com/Phornhathai/24-Fortune')">
+                        <button 
+                            class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Phornhathai/24-Fortune')">
                             Github
                         </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open=('https://24-fortune.netlify.app/', '_blank')">
+                        <button 
+                            class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://24-fortune.netlify.app/', '_blank')">
                             Live Demo
                         </button>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
+                <div class="details-container">
+                    <div class="project-container">
                         <img src="images/project-2.jpeg" alt="Project 3" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">Nike Store</h2>
@@ -240,8 +238,8 @@
         </div>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
+                <div class="details-container">
+                    <div class="project-container">
                         <img src="images/project-3.jpeg" alt="Project 4" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">Blog Website</h2>
@@ -256,8 +254,8 @@
                         </button>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
+                <div class="details-container">
+                    <div class="project-container">
                         <img src="./images/project-4.jpg" alt="Project 5" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title" >Shoping cart</h2>
@@ -272,8 +270,8 @@
                         </button>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
+                <!-- <div class="details-container ">
+                    <div class="project-container">
                         <img src="images/project-5.jpeg" alt="Project 6" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">Javascript Project</h2>
@@ -283,13 +281,9 @@
                             Github
                         </button>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
+                </div> -->
+                     <div class="details-container">
+                    <div class="project-container">
                         <img src="images/project-7.jpeg" alt="Project 7" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">Typescript Project</h2>
@@ -304,8 +298,13 @@
                         </button>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
+            </div>
+        </div>
+        <div class="experience-details-container">
+            <div class="about-containers">
+           
+                <div class="details-container">
+                    <div class="project-container">
                         <img src="images/project-11.jpg" alt="Project 8" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">Blog JavaScript</h2>
@@ -320,8 +319,8 @@
                         </button>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
+                <div class="details-container">
+                    <div class="project-container">
                         <img src="images/project-10.jpg" alt="Project 9" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">Blog Website</h2>
@@ -336,13 +335,8 @@
                         </button>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                
-                <div class="details-container color-container">
-                    <div class="article-container">
+                 <div class="details-container">
+                    <div class="project-container">
                         <img src="images/project-9.jpeg" alt="Project 10" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">e-Dashboard</h2>
@@ -357,8 +351,12 @@
                         </button>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
+            </div>
+        </div>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="project-container">
                         <img src="images/project-12.jpg" alt="Project 11" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">airbnb Cloning</h2>
@@ -373,15 +371,9 @@
                         </button>
                     </div>
                 </div>
-
-            </div>
-
-        </div>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                 
-                <div class="details-container color-container">
-                    <div class="article-container">
+        
+                <div class="details-container">
+                    <div class="project-container">
                         <img src="images/project-8.jpeg" alt="Project 12" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">Onepage Figma Clone Website</h2>
@@ -400,9 +392,8 @@
                         </button>
                     </div>
                 </div>
-            </div>
-
-        <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+      </div>
+        </div>
     </section>
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>

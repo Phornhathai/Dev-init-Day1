@@ -13,6 +13,10 @@
   }
   
   @media screen and (max-width: 1200px) {
+    #projects .about-containers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     #desktop-nav {
       display: none;
     }
@@ -48,6 +52,10 @@
   }
   
   @media screen and (max-width: 600px) {
+    #projects .about-containers {
+        grid-template-columns: 1fr;
+    }
+
     #contact,
     footer {
       height: 40vh;

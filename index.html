@@ -1,433 +1,524 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phornhathai Thanomwong | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-
-</head>
-
-<body>
-    <nav id="desktop-nav" aria-label="personal-user">
-        <div class="logo">
-            Phornhathai Thanomwong
-        </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav" aria-label="desktop-navigation">
+      <div class="logo">Phornhathai Thanomwong</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <nav id="hamburger-nav" aria-label="group-menus">
-        <div class="logo">Phornhathai Thanomwong</div>
-        <div class="hamburger-menu">
-            <div class="menu-links">
-                <ul>
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </ul>
-            </div>
+
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav" aria-label="mobile-navigation">
+      <div class="logo">Phornhathai Thanomwong</div>
+      <div class="hamburger-menu">
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
         </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img class="profile-user" src="./images/profile_aum.jpeg" alt="profile phornhathai thanomwong">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Phornhathai Thanomwong</h1>
-            <p class="section__text__p2">
-                Frontend Developer
-            </p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./images/Phornhathai Thanomwong Resume.pdf')">Download
-                    Resume</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="social-container">
-                <img src="./images/linkedin.png" alt="My LinkedIn profile" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/phornhathai/'">
-                <img src="./images/github.png" alt="My github profile" class="icon"
-                    onclick="location.href='https://github.com/Phornhathai'">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get to Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./images/about pic.jpeg" alt="Profile picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-containers">
-                        <img src="./images/experience.png" alt="experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>4+ years <br>Software Management</p>
-                    </div>
-                    <div class="details-containers">
-                        <img src="./images/education.png" alt="education icon" class="icon">
-                        <h3>Education</h3>
-                        <p> B.S. Bachelors Degree<br>M.S. Masters Degree</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I'm a Front-End Developer specializing in React and TypeScript, with experience building and maintaining complex, data-driven web applications. I work with tools like Redux Toolkit, React Query, and component libraries to deliver consistent UI and reliable user flows. I'm especially interested in performance and maintainability—refactoring code, improving UX, and documenting features for long-term ownership.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">
-            Explore My
-        </p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-containers">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="skills-container">
-                        <article>
-                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Javascript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Typescript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>React JS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>React Native</h3>
-                                 <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Flutter</h3>
-                                 <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Figma</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-containers">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="skills-container">
-                        <article>
-                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <div class="project-container">
-                        <img src="images/myportfolio.jpeg" alt="Project 1" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">My Portfolio</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/Dev-init-Day1', '_blank')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://phornhathai.netlify.app/', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <div class="project-container">
-                        <img src="./images/project-1.jpeg" alt="Project 2" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Plain Website</h2>
-                    <div class="btn-container">
-                        <button 
-                            class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/24-Fortune')">
-                            Github
-                        </button>
-                        <button 
-                            class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://24-fortune.netlify.app/', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <div class="project-container">
-                        <img src="images/project-2.jpeg" alt="Project 3" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Nike Store</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/Nike-Store')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://nike-store-demos.netlify.app/', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <div class="project-container">
-                        <img src="images/project-3.jpeg" alt="Project 4" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Blog Website</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/Blog-Platform---v2')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://blog-aummii.netlify.app', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <div class="project-container">
-                        <img src="./images/project-4.jpg" alt="Project 5" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title" >Shoping cart</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/e-commerce_midterm')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://e-commerce-website-phornhathai.netlify.app/', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <!-- <div class="details-container ">
-                    <div class="project-container">
-                        <img src="images/project-5.jpeg" alt="Project 6" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Javascript Project</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/FEBC2-DAY11.git')">
-                            Github
-                        </button>
-                    </div>
-                </div> -->
-                     <div class="details-container">
-                    <div class="project-container">
-                        <img src="images/project-7.jpeg" alt="Project 7" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Typescript Project</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/HW-Day21.git', '_blank')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://homework21-typescript-project.netlify.app/', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="experience-details-container">
-            <div class="about-containers">
-           
-                <div class="details-container">
-                    <div class="project-container">
-                        <img src="images/project-11.jpg" alt="Project 8" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Blog JavaScript</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/Blog-Platform---v2','_blank')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://blog-javascript-demo.netlify.app/', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <div class="project-container">
-                        <img src="images/project-10.jpg" alt="Project 9" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Blog Website</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/React-blog-demo' ,'_blank')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://react-blog-demo-phornhathai.netlify.app/', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                 <div class="details-container">
-                    <div class="project-container">
-                        <img src="images/project-9.jpeg" alt="Project 10" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">e-Dashboard</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/e-Dashboard','_blank')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://e-dashboard-react-demo1.netlify.app/', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <div class="project-container">
-                        <img src="images/project-12.jpg" alt="Project 11" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">airbnb Cloning</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/Airbnb','_blank')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://airbnb-cloning.netlify.app', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-        
-                <div class="details-container">
-                    <div class="project-container">
-                        <img src="images/project-8.jpeg" alt="Project 12" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Onepage Figma Clone Website</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://github.com/Phornhathai/OnePage-Figma-Clone.git', '_blank')">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://www.figma.com/file/vMYTJaTTj9Lwpbicb7FDtn/Figma-Website-Template---Landing-Page-(Free)-(Community)?type=design&node-id=0-88&mode=design&t=v8IdnXhdYJrpzklj-0', '_blank')">
-                            Figma Design
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="window.open('https://onepage-figma-cloning.netlify.app/', '_blank')">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
       </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="profile-user" src="./images/profile_aum.jpeg" alt="Phornhathai Thanomwong" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Phornhathai Thanomwong</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./images/Phornhathai Thanomwong Resume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href = './#contact'">
+            Contact Info
+          </button>
         </div>
+        <div id="social-container">
+          <a
+            href="https://www.linkedin.com/in/phornhathai/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/linkedin.png" alt="LinkedIn" class="icon" />
+          </a>
+          <a href="https://github.com/Phornhathai" target="_blank" rel="noopener noreferrer">
+            <img src="./images/github.png" alt="GitHub" class="icon" />
+          </a>
+        </div>
+      </div>
+      <a href="#about" aria-label="Go to About section">
+        <img src="./images/arrow.png" alt="" class="icon arrow arrow-down" />
+      </a>
     </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./images/about pic.jpeg" alt="About me" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-containers">
+              <img src="./images/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>4+ years <br />Software Management</p>
+            </div>
+            <div class="details-containers">
+              <img src="./images/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.S. Bachelors Degree<br />M.S. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a Front-End Developer specializing in React and TypeScript, with experience
+              building and maintaining complex, data-driven web applications. I work with tools like
+              Redux Toolkit, React Query, and component libraries to deliver consistent UI and
+              reliable user flows. I'm especially interested in performance and
+              maintainability—refactoring code, improving UX, and documenting features for long-term
+              ownership.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#experience" aria-label="Go to Experience section">
+        <img src="./images/arrow.png" alt="" class="icon arrow arrow-down" />
+      </a>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-containers">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="skills-container">
+              <article>
+                <img src="./images/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./images/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./images/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./images/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./images/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./images/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>Next.js</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./images/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>React Native</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./images/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./images/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-containers">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="skills-container">
+              <article>
+                <img src="./images/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./images/checkmark.png" alt="" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#projects" aria-label="Go to Projects section">
+        <img src="./images/arrow.png" alt="" class="icon arrow arrow-down" />
+      </a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Aum Estate Studio -->
+          <div class="details-container featured-project">
+            <span class="featured-badge">Featured</span>
+            <div class="project-container slideshow">
+              <img src="images/project-nextjs-1.png" alt="Aum Estate Studio" class="project-img slide slide-1" />
+              <img src="images/project-nextjs-1.1.png" alt="Aum Estate Studio" class="project-img slide slide-2" />
+            </div>
+            <h2 class="experience-sub-title project-title">Aum Estate Studio</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">React</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://aumestatestudio.netlify.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Aum Estate Landing -->
+          <div class="details-container featured-project">
+            <span class="featured-badge">Featured</span>
+            <div class="project-container">
+              <img
+                src="images/project-aumestate.jpeg"
+                alt="Aum Estate Landing"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Aum Estate Landing</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">React</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://estate-nextjs-spa.netlify.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- My Portfolio -->
+          <div class="details-container">
+            <div class="project-container">
+              <img src="images/myportfolio.jpeg" alt="My Portfolio" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">My Portfolio</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Phornhathai/Dev-init-Day1', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://phornhathai.netlify.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- airbnb Cloning -->
+          <div class="details-container">
+            <div class="project-container">
+              <img src="images/project-12.jpg" alt="Airbnb Cloning" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Airbnb Cloning</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Phornhathai/Airbnb', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://airbnb-cloning.netlify.app', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- e-Dashboard -->
+          <div class="details-container">
+            <div class="project-container">
+              <img src="images/project-9.jpeg" alt="e-Dashboard" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">e-Dashboard</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Phornhathai/e-Dashboard', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://e-dashboard-react-demo1.netlify.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Blog Website (React) -->
+          <div class="details-container">
+            <div class="project-container">
+              <img src="images/project-10.jpg" alt="Blog Website React" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Blog Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Phornhathai/React-blog-demo', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://react-blog-demo-phornhathai.netlify.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Nike Store -->
+          <div class="details-container">
+            <div class="project-container">
+              <img src="images/project-2.jpeg" alt="Nike Store" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Nike Store</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Phornhathai/Nike-Store', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://nike-store-demos.netlify.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Shopping Cart -->
+          <div class="details-container">
+            <div class="project-container">
+              <img src="./images/project-4.jpg" alt="Shopping Cart" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Shopping Cart</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Phornhathai/e-commerce_midterm', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  window.open('https://e-commerce-website-phornhathai.netlify.app/', '_blank')
+                "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- TypeScript Project -->
+          <div class="details-container">
+            <div class="project-container">
+              <img src="images/project-7.jpeg" alt="TypeScript Project" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">TypeScript Project</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Phornhathai/HW-Day21.git', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  window.open('https://homework21-typescript-project.netlify.app/', '_blank')
+                "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Onepage Figma Clone -->
+          <div class="details-container">
+            <div class="project-container">
+              <img
+                src="images/project-8.jpeg"
+                alt="Onepage Figma Clone Website"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Onepage Figma Clone</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  window.open('https://github.com/Phornhathai/OnePage-Figma-Clone.git', '_blank')
+                "
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://onepage-figma-cloning.netlify.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Plain Website -->
+          <div class="details-container">
+            <div class="project-container">
+              <img src="./images/project-1.jpeg" alt="Plain Website" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Plain Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Phornhathai/24-Fortune', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://24-fortune.netlify.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#profile" aria-label="Back to top">
+        <img src="./images/arrow.png" alt="" class="icon arrow arrow-up" />
+      </a>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./images/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:phornhathai.tha@outlook.com">phornhathai.tha@outlook.com</a></p>
-
-            </div>
-            <div class="contact-info-container">
-                <img src="./images/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/phornhathai/">Linkedin</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./images/mobile.svg" alt="mobile" class="icon contact-icon">
-                <p>Tel : 096-408-3546</a></p>
-            </div>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:phornhathai.tha@outlook.com">phornhathai.tha@outlook.com</a></p>
         </div>
+        <div class="contact-info-container">
+          <img src="./images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/phornhathai/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./images/mobile.svg" alt="Phone icon" class="icon contact-icon" />
+          <p>Tel: 096-408-3546</p>
+        </div>
+      </div>
     </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2023 Phornhathai Thanomwong. All Rights Reserved</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
 
+    <footer>
+      <nav aria-label="footer-navigation">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Phornhathai Thanomwong. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
